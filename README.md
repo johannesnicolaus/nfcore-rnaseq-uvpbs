@@ -3,6 +3,11 @@ nfcore RNA-seq pipeline template for IPR UV-PBS
 
 Written by Johannes Nicolaus Wibisana for the Laboratory for Cell Systems IPR
 
+This template repository can be used for the analysis of bulk-RNA-seq data, including steps from QC, trimming, alignment, up to the quantification of transcripts.
+
+More info of the pipeline is available on:
+https://nf-co.re/rnaseq/3.5
+
 # Prerequisites
 Nextflow must be installed, preferably using conda:
 ```shell
