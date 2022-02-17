@@ -3,8 +3,8 @@
 #PBS -q MEDIUM
 #PBS -l select=1:ncpus=8:mem=256gb
 #PBS -N JOB_NAME
-#PBS -e ${PBS_O_WORKDIR}/logs
 #PBS -m e
+#PBS -e ${PBS_O_WORKDIR}/logs
 #PBS -o ${PBS_O_WORKDIR}/logs
 #PBS -M YOUR_EMAIL@EMAIL.com
 
