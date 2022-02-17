@@ -1,0 +1,9 @@
+sample,fastq_1,fastq_2,strandedness
+sictrl_0min_1,/user1/tanpaku/okada/jnicolaus/ikba_project/raw_data/rnaseq/Sample_170418_Hisq1B_l1_001_Dr_Okada_Dr_Magi.fastq.gz,,reverse
+sictrl_0min_2,/user1/tanpaku/okada/jnicolaus/ikba_project/raw_data/rnaseq/Sample_170418_Hisq1B_l1_002_Dr_Okada_Dr_Magi.fastq.gz,,reverse
+siikba_0min_1,/user1/tanpaku/okada/jnicolaus/ikba_project/raw_data/rnaseq/Sample_170418_Hisq1B_l1_003_Dr_Okada_Dr_Magi.fastq.gz,,reverse
+siikba_0min_2,/user1/tanpaku/okada/jnicolaus/ikba_project/raw_data/rnaseq/Sample_170418_Hisq1B_l1_004_Dr_Okada_Dr_Magi.fastq.gz,,reverse
+sictrl_15min_1,/user1/tanpaku/okada/jnicolaus/ikba_project/raw_data/rnaseq/Sample_170418_Hisq1B_l1_005_Dr_Okada_Dr_Magi.fastq.gz,,reverse
+sictrl_15min_2,/user1/tanpaku/okada/jnicolaus/ikba_project/raw_data/rnaseq/Sample_170418_Hisq1B_l1_006_Dr_Okada_Dr_Magi.fastq.gz,,reverse
+siikba_15min_1,/user1/tanpaku/okada/jnicolaus/ikba_project/raw_data/rnaseq/Sample_170418_Hisq1B_l1_007_Dr_Okada_Dr_Magi.fastq.gz,,reverse
+siikba_15min_2,/user1/tanpaku/okada/jnicolaus/ikba_project/raw_data/rnaseq/Sample_170418_Hisq1B_l2_008_Dr_Okada_Dr_Magi.fastq.gz,,reverse
