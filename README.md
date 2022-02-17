@@ -24,6 +24,32 @@ $ git clone https://github.com/johannesnicolaus/nfcore-rnaseq-uvpbs.git
 
 # Usage
 
+## To prepare your data for analysis
+- Place all the `fastq.gz` files inside the `raw_data` directory.
+- Edit `samplesheet_rna.csv` within the work `directory` to include the following information at each column:
+   1. `sample`: replicate can be separated by using the suffix `_1`, `_2`, etc. The same sample sequenced more than once should have identical sample names.<br> (Check https://nf-co.re/rnaseq/usage for sample naming)
+   2. `fastq_1`: Read 1 (R1) containing fastq file
+   3. `fastq_2`: Read 2 (R2) containing fastq file, leave blank if single-end read only
+   4. strandedness. Sample strand-specificity: `unstranded`, `forward`, `reverse`.
+
+### More details about the sample sheet
+Please refer to https://nf-co.re/rnaseq/usage for details on sample sheet usage.
+
+Strandedness is required for accurate QC. As the parameter `--salmon_quant_libtype A` is specified, downstream analyses will not be affected even though the wrong strandedness is specified.
+
+## Running the pipeline
+To run the pipeline, navigate to the `work` directory and execute:
+```shell
+$ qsub run.sh
+```
+
+To check progress:
+```shell
+$ qstat
+```
+
+# Description of parameters
+
 ## UV-PBS server parameters used in script
 
 - `#PBS -q MEDIUM` <br>
@@ -78,21 +104,6 @@ Uses max CPU of 8, this depends on the queue where the job is run.
 - `--max_memory 256.GB`<br>
 Uses max memory of 256 GB, this also depends on the parameters set on the `#PBS` headers.
 
-### More details about the sample sheet
-Please refer to https://nf-co.re/rnaseq/usage for details on sample sheet usage.
-
-Strandedness is required for accurate QC. As the parameter `--salmon_quant_libtype A` is specified, downstream analyses will not be affected even though the wrong strandedness is specified.
-
-## Running the pipeline
-To run the pipeline, navigate to the `work` directory and execute:
-```shell
-$ qsub run.sh
-```
-
-To check progress:
-```shell
-$ qstat
-```
 
 ## Results
 Results will be available in the `results` directory, in which the quality check results are within the multiqc directory and the quantified transcripts are within the `star_salmon` directory.
