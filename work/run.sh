@@ -4,8 +4,8 @@
 #PBS -l select=1:ncpus=8:mem=256gb
 #PBS -N JOB_NAME
 #PBS -m e
-#PBS -e ${PBS_O_WORKDIR}/logs
-#PBS -o ${PBS_O_WORKDIR}/logs
+#PBS -e ${PBS_O_WORKDIR}/error_log
+#PBS -o ${PBS_O_WORKDIR}/output_log
 #PBS -M YOUR_EMAIL@EMAIL.com
 
 cd ${PBS_O_WORKDIR}
