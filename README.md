@@ -127,6 +127,12 @@ To prevent nf-core from downloading singularity containers on every run, add the
 
 Where `SINGULARITY_DIRECTORY` is the directory where the images are stored.
 
+## To resume job 
+If somehow the job was aborted due to errors or any other problem, it is possible to continue from the last succesful checkpoint by addint the following parameter: <br>
+`-resume`
+
+
+
 For further questions contact Nico at: <br>
 nico@protein.osaka-u.ac.jp <br>
 johannes.nicolaus@gmail.com
