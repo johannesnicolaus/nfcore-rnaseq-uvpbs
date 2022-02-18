@@ -26,7 +26,7 @@ $ git clone https://github.com/johannesnicolaus/nfcore-rnaseq-uvpbs.git
 
 ## To prepare your data for analysis
 - Place all the `fastq.gz` files inside the `raw_data` directory.
-- Edit `samplesheet_rna.csv` within the work `directory` to include the following information at each column:
+- Edit `samplesheet_rna.csv` within the `work` directory to include the following information at each column:
    1. `sample`: replicate can be separated by using the suffix `_1`, `_2`, etc. The same sample sequenced more than once should have identical sample names.<br> (Check https://nf-co.re/rnaseq/usage for sample naming)
    2. `fastq_1`: Read 1 (R1) containing fastq file
    3. `fastq_2`: Read 2 (R2) containing fastq file, leave blank if single-end read only
