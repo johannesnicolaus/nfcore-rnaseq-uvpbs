@@ -67,8 +67,8 @@ Specifies the name of the job.
 - `#PBS -m e` <br>
 Sends email when job is terminated.
 
-- `#PBS -e ${PBS_O_WORKDIR}/logs` `#PBS -o ${PBS_O_WORKDIR}/logs`<br>
-Sets the error and output log directory on the `logs` directory within the same directory as the `run.sh` script.
+- `#PBS -e ${PBS_O_WORKDIR}` `#PBS -o ${PBS_O_WORKDIR}`<br>
+Sets the error and output log directory to the same directory as the `run.sh` script.
 
 - `#PBS -M YOUR_EMAIL@EMAIL.com` <br>
 Email for which the job status is sent to.
